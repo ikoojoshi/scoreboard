@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <title>About</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+</head>
+<body>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href={{ url_for('index') }}>ScoreBoard</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href={{ url_for('index') }}>Score <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href={{ url_for('about') }}>About <span class="sr-only">(current)</span> </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+    <br>
+    <br>
+
+    
+    
+    <form action="{{ url_for('dashboard') }}" method="post">
+    <div class="container">
+        <div class="container">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4" style="text-align: center;">
+                            <img style="width: 100px; height: auto; border-radius: 50%; border: 2px solid 'black';" src="{{ url_for('static', filename='teamA.jpg') }}" alt="">
+                            <div class="form-group">
+                                <label for="teamA">Team A</label>
+                                <input type="text" class="form-control" name="teamA" aria-describedby="teamA" placeholder="India">
+                                <br><br>
+                                <label for="teamALineup">Number of Players</label>
+                                <input type="text" class="form-control" name="teamAn" aria-describedby="teamA" placeholder="11">
+                                <label for="teamALineup">Lineup</label>
+                                <input type="text" class="form-control" name="teamA1" aria-describedby="teamA" placeholder="Player 1">
+                                <input type="text" class="form-control" name="teamA2" aria-describedby="teamA" placeholder="Player 2">
+                                <input type="text" class="form-control" name="teamA3" aria-describedby="teamA" placeholder="Player 3">
+                                <input type="text" class="form-control" name="teamA4" aria-describedby="teamA" placeholder="Player 4">
+                                <input type="text" class="form-control" name="teamA5" aria-describedby="teamA" placeholder="Player 5">
+                                <input type="text" class="form-control" name="teamA6" aria-describedby="teamA" placeholder="Player 6">
+                                <input type="text" class="form-control" name="teamA7" aria-describedby="teamA" placeholder="Player 7">
+                                <input type="text" class="form-control" name="teamA8" aria-describedby="teamA" placeholder="Player 8">
+                                <input type="text" class="form-control" name="teamA9" aria-describedby="teamA" placeholder="Player 9">
+                                <input type="text" class="form-control" name="teamA10" aria-describedby="teamA" placeholder="Player 10">
+                                <input type="text" class="form-control" name="teamA11" aria-describedby="teamA" placeholder="Player 11">
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4" style="text-align: center;">
+                            <div style="height: 75%;"><br></div>
+                        </div>
+                        <div class="col-lg-4" style="text-align: center;">
+                            <!-- <div style="height: 20%;"><br></div> -->
+                            <img style="width: 100px; height: auto; border-radius: 50%; border: 2px solid 'black';" src="{{ url_for('static', filename='teamB.jpg') }}" alt="">
+                            <!-- <div class="form-group"> -->
+                                <div style="height: 1%;"><br></div>
+                                <label for="teamBlabel">Team B</label>
+                                <input type="text" class="form-control" name="teamB" aria-describedby="teamB" placeholder="New Zealand">
+                                <!-- <input type="text" class="form-control" id="teamB"  placeholder="New Zealand"> -->
+                            <!-- </div> -->
+                            <br>
+                                <label for="teamALineup">Number of Players</label>
+                                <input type="text" class="form-control" name="teamBn" aria-describedby="teamA" placeholder="11">
+                                <label for="teamALineup">Lineup</label>
+                                <input type="text" class="form-control" name="teamB1" aria-describedby="teamA" placeholder="Player 1">
+                                <input type="text" class="form-control" name="teamB2" aria-describedby="teamA" placeholder="Player 2">
+                                <input type="text" class="form-control" name="teamB3" aria-describedby="teamA" placeholder="Player 3">
+                                <input type="text" class="form-control" name="teamB4" aria-describedby="teamA" placeholder="Player 4">
+                                <input type="text" class="form-control" name="teamB5" aria-describedby="teamA" placeholder="Player 5">
+                                <input type="text" class="form-control" name="teamB6" aria-describedby="teamA" placeholder="Player 6">
+                                <input type="text" class="form-control" name="teamB7" aria-describedby="teamA" placeholder="Player 7">
+                                <input type="text" class="form-control" name="teamB8" aria-describedby="teamA" placeholder="Player 8">
+                                <input type="text" class="form-control" name="teamB9" aria-describedby="teamA" placeholder="Player 9">
+                                <input type="text" class="form-control" name="teamB10" aria-describedby="teamA" placeholder="Player 10">
+                                <input type="text" class="form-control" name="teamB11" aria-describedby="teamA" placeholder="Player 11">
+                        </div>
+                    </div>
+                    
+                <br><br><br><br>
+                Number of overs    : <input type="text" name="overs"><br><br>
+                Team batting first : <input type="text" name="first"><br><br><br>
+            <input type="submit" value="Submit">
+                
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+ 
+
+        
+            
+        </form>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+</body>
+</html>
